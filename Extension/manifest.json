@@ -1,0 +1,19 @@
+{
+    "name": "RichPresence",
+    "description": "Just a rich presence made by MatthTsx",
+    "version": "1.0",
+    "manifest_version": 3,
+    "action": {
+        "default_popup": "index.html"
+    },
+    "permissions": ["activeTab", "scripting", "tabs"],
+    "host_permissions": ["http://localhost:4727/*"],
+    "background": { "service_worker": "background.js"},
+
+    "content_scripts": [
+        {
+            "matches": ["https://studyverse.live/*", "http://studyverse.live/*"],
+            "js": ["/client.js"]
+        }
+    ]
+}   
