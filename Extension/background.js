@@ -58,7 +58,6 @@ async function getExist(tabId){
         Running_Tabs.push(tb)
         return tb
     }
-    console.log(Running_Tabs)
     return index
 }
 
@@ -102,4 +101,4 @@ setInterval(() => {
     }).catch(err => console.log(err))
     if(ActualTab == null) isLastPostNull = true
     else isLastPostNull = false
-}, 5000)
+}, 2500)

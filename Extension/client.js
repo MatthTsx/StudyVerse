@@ -2,7 +2,6 @@ const haxRegex = /^[0-9a-fA-F]+$/
 
 function sendDocs () {
     const url = document.location.pathname.slice(1)
-    console.log(url)
     if(haxRegex.test(url)) return sendRoom()
 }
 
@@ -21,4 +20,4 @@ function sendRoom(){
 
 
 
-setInterval(sendDocs, 5000)
+setInterval(sendDocs, 2500)
